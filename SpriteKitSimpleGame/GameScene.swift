@@ -52,7 +52,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // 1
     let player = SKSpriteNode(imageNamed: "player")
     let killedTimeLabel = SKLabelNode(fontNamed: "Chalkduster")
-    var monstersDestroyed = 0
+
+    let monsterNeededToWin = 10
+    var monstersDestroyed = 0 {
+        willSet {
+            killedTimeLabel.text = "Killed Time: \(100*newValue/monsterNeededToWin)%"
+        }
+    }
 
     override func didMove(to view: SKView) {
         // 2
@@ -62,7 +68,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // 4
         addChild(player)
 
-        // 3
+        // Score label
         killedTimeLabel.text = "Killed Time: 0%"
         killedTimeLabel.fontSize = 20
         killedTimeLabel.fontColor = SKColor.black
@@ -179,7 +185,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         monster.removeFromParent()
 
         monstersDestroyed += 1
-        if (monstersDestroyed > 30) {
+        if (monstersDestroyed > monsterNeededToWin) {
             let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
             let gameOverScene = GameOverScene(size: self.size, won: true)
             self.view?.presentScene(gameOverScene, transition: reveal)
