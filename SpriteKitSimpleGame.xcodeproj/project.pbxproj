@@ -16,6 +16,8 @@
 		35F7AA551D9EEAC9009C4036 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */; };
 		35F7AA561D9EEAC9009C4036 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */; };
 		35F7AA581D9EEE12009C4036 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA571D9EEE12009C4036 /* GameOverScene.swift */; };
+		4447FE391DEAE4B100692C43 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4447FE301DEAE4B100692C43 /* Readme.txt */; };
+		4447FE3B1DEAE4B100692C43 /* SF Pixelate Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4447FE321DEAE4B100692C43 /* SF Pixelate Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		35F7AA571D9EEE12009C4036 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		4447FE301DEAE4B100692C43 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		4447FE321DEAE4B100692C43 /* SF Pixelate Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Pixelate Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		35F7AA391D9EE88E009C4036 /* SpriteKitSimpleGame */ = {
 			isa = PBXGroup;
 			children = (
+				4447FE2F1DEAE4B100692C43 /* Font */,
 				35F7AA521D9EEAC9009C4036 /* Sounds */,
 				35F7AA3A1D9EE88E009C4036 /* AppDelegate.swift */,
 				35F7AA401D9EE88E009C4036 /* GameScene.swift */,
@@ -82,6 +87,16 @@
 				35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4447FE2F1DEAE4B100692C43 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4447FE301DEAE4B100692C43 /* Readme.txt */,
+				4447FE321DEAE4B100692C43 /* SF Pixelate Bold.ttf */,
+			);
+			name = Font;
+			path = sf_pixelate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +159,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4447FE391DEAE4B100692C43 /* Readme.txt in Resources */,
 				35F7AA551D9EEAC9009C4036 /* background-music-aac.caf in Resources */,
 				35F7AA461D9EE88E009C4036 /* Main.storyboard in Resources */,
 				35F7AA481D9EE88E009C4036 /* Assets.xcassets in Resources */,
 				35F7AA561D9EEAC9009C4036 /* pew-pew-lei.caf in Resources */,
 				35F7AA4B1D9EE88E009C4036 /* LaunchScreen.storyboard in Resources */,
+				4447FE3B1DEAE4B100692C43 /* SF Pixelate Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

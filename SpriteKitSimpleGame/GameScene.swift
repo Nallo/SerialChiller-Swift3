@@ -51,7 +51,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     // 1
     let player = SKSpriteNode(imageNamed: "player")
-    let killedTimeLabel = SKLabelNode(fontNamed: "Chalkduster")
+    let killedTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
 
     let monsterNeededToWin = 10
     var monstersDestroyed = 0 {
