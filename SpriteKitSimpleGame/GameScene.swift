@@ -70,9 +70,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
         // Score label
         killedTimeLabel.text = "Killed Time: 0%"
-        killedTimeLabel.fontSize = 20
+        killedTimeLabel.fontSize = 25
         killedTimeLabel.fontColor = SKColor.black
-        killedTimeLabel.position = CGPoint(x: 0.8*size.width, y: 0.9*size.height)
+        killedTimeLabel.position = CGPoint(x: 0.75*size.width, y: 0.9*size.height)
         addChild(killedTimeLabel)
 
         physicsWorld.gravity = CGVector.zero
