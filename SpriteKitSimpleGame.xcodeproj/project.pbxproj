@@ -18,6 +18,7 @@
 		35F7AA581D9EEE12009C4036 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F7AA571D9EEE12009C4036 /* GameOverScene.swift */; };
 		4447FE391DEAE4B100692C43 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4447FE301DEAE4B100692C43 /* Readme.txt */; };
 		4447FE3B1DEAE4B100692C43 /* SF Pixelate Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4447FE321DEAE4B100692C43 /* SF Pixelate Bold.ttf */; };
+		448016C91DEB15FB006CEF25 /* woodies.caf in Resources */ = {isa = PBXBuildFile; fileRef = 448016C81DEB15FB006CEF25 /* woodies.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		35F7AA571D9EEE12009C4036 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		4447FE301DEAE4B100692C43 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		4447FE321DEAE4B100692C43 /* SF Pixelate Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Pixelate Bold.ttf"; sourceTree = "<group>"; };
+		448016C81DEB15FB006CEF25 /* woodies.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = woodies.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		35F7AA521D9EEAC9009C4036 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				448016C81DEB15FB006CEF25 /* woodies.caf */,
 				35F7AA531D9EEAC9009C4036 /* background-music-aac.caf */,
 				35F7AA541D9EEAC9009C4036 /* pew-pew-lei.caf */,
 			);
@@ -164,6 +167,7 @@
 				35F7AA461D9EE88E009C4036 /* Main.storyboard in Resources */,
 				35F7AA481D9EE88E009C4036 /* Assets.xcassets in Resources */,
 				35F7AA561D9EEAC9009C4036 /* pew-pew-lei.caf in Resources */,
+				448016C91DEB15FB006CEF25 /* woodies.caf in Resources */,
 				35F7AA4B1D9EE88E009C4036 /* LaunchScreen.storyboard in Resources */,
 				4447FE3B1DEAE4B100692C43 /* SF Pixelate Bold.ttf in Resources */,
 			);
