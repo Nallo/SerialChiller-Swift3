@@ -56,7 +56,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let staticTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
     let killedTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
 
-    let monsterNeededToWin = 15
+    let monsterNeededToWin = 30
     var monstersDestroyed = 0 {
         willSet {
             killedTimeLabel.text = "\(100*newValue/monsterNeededToWin)%"
