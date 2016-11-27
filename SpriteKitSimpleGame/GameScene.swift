@@ -51,6 +51,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     // 1
     let player = SKSpriteNode(imageNamed: "player")
+    let killedTimeLabel = SKLabelNode(fontNamed: "Chalkduster")
     var monstersDestroyed = 0
 
     override func didMove(to view: SKView) {
@@ -60,6 +61,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
         // 4
         addChild(player)
+
+        // 3
+        killedTimeLabel.text = "Killed Time: 0%"
+        killedTimeLabel.fontSize = 20
+        killedTimeLabel.fontColor = SKColor.black
+        killedTimeLabel.position = CGPoint(x: 0.8*size.width, y: 0.9*size.height)
+        addChild(killedTimeLabel)
 
         physicsWorld.gravity = CGVector.zero
         physicsWorld.contactDelegate = self
