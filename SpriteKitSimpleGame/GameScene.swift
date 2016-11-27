@@ -50,6 +50,7 @@ struct PhysicsCategory {
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
     // 1
+    let bgImage = SKSpriteNode(imageNamed: "game-background")
     let player = SKSpriteNode(imageNamed: "player")
     let killedTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
 
@@ -62,10 +63,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override func didMove(to view: SKView) {
         // 2
-        backgroundColor = SKColor.white
-        // 3
+        bgImage.position = CGPoint(x: size.width/2, y: size.height/2)
+        addChild(bgImage)
+
+        // Player
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
-        // 4
         addChild(player)
 
         // Score label
