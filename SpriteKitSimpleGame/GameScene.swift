@@ -122,7 +122,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         monster.physicsBody?.collisionBitMask = PhysicsCategory.None // 5
 
         // Determine where to spawn the monster along the Y axis
-        let actualY = random(min: monster.size.height/2, max: size.height - monster.size.height/2)
+        let actualY = random(min: monster.size.height/2, max: 0.6*size.height - monster.size.height/2)
 
         // Position the monster slightly off-screen along the right edge,
         // and along a random position along the Y axis as calculated above
