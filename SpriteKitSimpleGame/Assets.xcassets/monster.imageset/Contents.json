@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "monster.png",
+      "filename" : "Hackaton_Nemico x2-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "monster@2x.png",
+      "filename" : "Hackaton_Nemico x2.png",
       "scale" : "2x"
     },
     {
