@@ -52,12 +52,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // 1
     let bgImage = SKSpriteNode(imageNamed: "game-background")
     let player = SKSpriteNode(imageNamed: "player")
+
+    let staticTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
     let killedTimeLabel = SKLabelNode(fontNamed: "SF Pixelate Bold")
 
     let monsterNeededToWin = 10
     var monstersDestroyed = 0 {
         willSet {
-            killedTimeLabel.text = "Killed Time: \(100*newValue/monsterNeededToWin)%"
+            killedTimeLabel.text = "\(100*newValue/monsterNeededToWin)%"
         }
     }
 
@@ -71,11 +73,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
         addChild(player)
 
+        // Static label
+        staticTimeLabel.text = "Killed Time"
+        staticTimeLabel.fontSize = 25
+        staticTimeLabel.fontColor = SKColor.green
+        staticTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.93*size.height)
+        addChild(staticTimeLabel)
+
         // Score label
-        killedTimeLabel.text = "Killed Time: 0%"
-        killedTimeLabel.fontSize = 25
-        killedTimeLabel.fontColor = SKColor.black
-        killedTimeLabel.position = CGPoint(x: 0.75*size.width, y: 0.9*size.height)
+        killedTimeLabel.text = "0%"
+        killedTimeLabel.fontSize = 27
+        killedTimeLabel.fontColor = SKColor.green
+        killedTimeLabel.position = CGPoint(x: 0.83*size.width, y: 0.83*size.height)
         addChild(killedTimeLabel)
 
         physicsWorld.gravity = CGVector.zero
